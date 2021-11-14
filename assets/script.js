@@ -1,12 +1,9 @@
-// var jumbotronEl = document.querySelector(".jumbotron");
-// var currentDayEl = document.querySelector("#current-day");
-// currentDayEl.textContent = moment().format('MMMM Do YYYY, h:mm:ss a');
-// currentDayEl.textContent = "Hello";
-// var containerEl = document.querySelector(".container");
-// var saveBtnEl = document.querySelector(".saveBtn");
-var day = moment().format('MMMM Do YYYY, h:mm:ss a');
-$("#current-day").text(day);
-
+function displayTime() {
+    var day = moment().format('MMMM Do YYYY, h:mm:ss a');
+    $('#current-day').html(day);
+    setInterval(displayTime, 1000);
+}
+displayTime();
 
 // TODO:
 // Display Time
