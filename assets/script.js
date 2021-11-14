@@ -21,12 +21,15 @@ for (var i = 0; i < schedule.length; i++) {
   </div>`);
 }
 
+$(".saveBtn").on("click", function name(params) {
+    var descriptionEl = $(".desription").text();
+    localStorage.setItem("appointment", JSON.stringify(descriptionEl));
+})
+
 // function setApp() {
 //     localStorage.setItem($(".description").val())
 
 // }
-
-// $(".saveBtn").on("click", setApp())
 
 // function saveAppointment() {
 //     var descriptionEl = document.querySelector(".description");
