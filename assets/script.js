@@ -1,19 +1,20 @@
 function displayDay() {
-    var day = moment().format('MMMM Do YYYY');
+    var day = moment().format('MMMM Do YYYY h:mm:ss a');
     $('#current-day').html(day);
     setInterval(displayDay, 1000);
 }
 displayDay();
 
-function displayTime() {
-    var time = moment().format('h:mm:ss a');
-    $('#current-time').html(time);
-    setInterval(displayTime, 1000);
-}
-displayTime();
+// function displayTime() {
+//     var time = moment().format('h:mm:ss a');
+//     $('#current-time').html(time);
+//     setInterval(displayTime, 1000);
+// }
+// displayTime();
 
 var schedule = ["9:00AM", "10:00AM", "11:00AM", "12:00PM", "1:00PM", "2:00PM", "3:00PM", "4:00PM", "5:00PM"];
-var timeID = ["9-AM", "10-AM", "11-AM", "12-PM", "1-PM", "2-PM", "3-PM", "4-PM", "5-PM"]
+var timeID = ["9-AM", "10-AM", "11-AM", "12-PM", "13-PM", "14-PM", "15-PM", "16-PM", "17-PM"]
+// var timeID = ["9-AM", "10-AM", "11-AM", "12-PM", "1-PM", "2-PM", "3-PM", "4-PM", "5-PM"]
 for (var i = 0; i < schedule.length; i++) {
     $("#timeblocks").append(`<div id="${timeID[i]}" class="timeblock row present">
     <div class="hour col-1">
@@ -40,32 +41,34 @@ $(".saveBtn").on("click", function (event) {
 
 $(document).ready(() => {
     
-       $("#9-AM .description").val(localStorage.getItem('9AM'))
-       $("#10-AM .description").val(localStorage.getItem('10AM'))
-       $("#11-AM .description").val(localStorage.getItem('11AM'))
-       $("#12-PM .description").val(localStorage.getItem('12PM'))
-       $("#1-PM .description").val(localStorage.getItem('1PM'))
-       $("#2-PM .description").val(localStorage.getItem('2PM'))
-       $("#3-PM .description").val(localStorage.getItem('3PM'))
-       $("#4-PM .description").val(localStorage.getItem('4PM'))
-       $("#5-PM .description").val(localStorage.getItem('5PM'))
+       $("#9-AM .description").val(localStorage.getItem('9-AM'))
+       $("#10-AM .description").val(localStorage.getItem('10-AM'))
+       $("#11-AM .description").val(localStorage.getItem('11-AM'))
+       $("#12-PM .description").val(localStorage.getItem('12-PM'))
+       $("#13-PM .description").val(localStorage.getItem('13-PM'))
+       $("#14-PM .description").val(localStorage.getItem('14-PM'))
+       $("#15-PM .description").val(localStorage.getItem('15-PM'))
+       $("#16-PM .description").val(localStorage.getItem('16-PM'))
+       $("#17-PM .description").val(localStorage.getItem('17-PM'))
     
 })
 function checkHour(){
-    var currentHour = moment().format("h")
-    console.log(currentHour)
+    // var currentHour = moment().format("h")
+    var currentHour = moment().hour()
 $('.timeblock').each(function(){
     var timeCheck = $(this).attr("id").split('-')[0]
-    console.log(timeCheck);
-    // console.log(currentHour)
     if(timeCheck > currentHour){
         $(this).addClass('future')
-    } else if (timeCheck === currentHour){
+        $(this).removeClass('past')
+        $(this).removeClass('present')
+    } else if (timeCheck == currentHour){
         $(this).addClass('present')
         $(this).removeClass('future')
+        $(this).removeClass('past')
     } else {
-         $(this).addClass('present')
+        $(this).addClass('past')
         $(this).removeClass('future')
+        $(this).removeClass('present')
     }
 })
 }
