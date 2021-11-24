@@ -74,19 +74,3 @@ $('.timeblock').each(function(){
 }
 checkHour()
 setInterval(checkHour, 5000)
-
-// TODO:
-// Display Time
-// Timeblock change color
-// save text from Timeblock
-// saves to local storage 
-// persists when page refreshes 
-
-
-// function paletteSwap(time) {
-//     var hourEL = $(".hour").html();
-//     if(hourEL < time ) {
-//         timeblockEL.attr("class", "timeblock row past")
-//     }
-// }
-// paletteSwap();

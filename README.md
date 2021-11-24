@@ -2,7 +2,7 @@
 WHEN I launch the webpage
 THEN I am presented with the current day/time and timeblockds for standard working hours
 WHEN viewing the timeblocks
-THEN I see they are color coded to indicate past(grey), present(red), and future(red)
+THEN I see they are color coded to indicate past(grey), present(red), and future(green)
 WHEN I click the textarea of the timeblock
 THEN I can input an appointment
 WHEN I click the corresponding save button
