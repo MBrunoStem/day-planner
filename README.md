@@ -15,6 +15,8 @@ Keep track of your busy schedule by saving all your appointments you day planner
 - WHEN I refresh the day planner
 - THEN the saved events persist
 
+## License
+
 ## Deployed Site
 https://mbrunostem.github.io/day-planner/
 
