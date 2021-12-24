@@ -7,7 +7,6 @@ displayDay();
 
 var schedule = ["9:00AM", "10:00AM", "11:00AM", "12:00PM", "1:00PM", "2:00PM", "3:00PM", "4:00PM", "5:00PM"];
 var timeID = ["9-AM", "10-AM", "11-AM", "12-PM", "13-PM", "14-PM", "15-PM", "16-PM", "17-PM"]
-// var timeID = ["9-AM", "10-AM", "11-AM", "12-PM", "1-PM", "2-PM", "3-PM", "4-PM", "5-PM"]
 for (var i = 0; i < schedule.length; i++) {
     $("#timeblocks").append(`<div id="${timeID[i]}" class="timeblock row present">
     <div class="hour col-1">
