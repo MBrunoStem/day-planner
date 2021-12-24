@@ -1,4 +1,4 @@
-# Day Planner
+# Day Planner ![License](./assets/images/LicenseMIT.png)
 
 ## Description
 Keep track of your busy schedule by saving all your appointments you day planner.
