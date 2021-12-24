@@ -1,7 +1,7 @@
 # Day Planner
 
 ## Description
-
+Keep track of your busy schedule by saving all your appointments you day planner.
 
 ## User Story
 WHEN I launch the webpage
