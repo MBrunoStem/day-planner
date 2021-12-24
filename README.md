@@ -15,6 +15,11 @@ Keep track of your busy schedule by saving all your appointments you day planner
 - WHEN I refresh the day planner
 - THEN the saved events persist
 
+## Technologies Used
+- HTML
+- CSS
+- Javascipt
+
 ## License
 The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology (MIT) in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility.
 
