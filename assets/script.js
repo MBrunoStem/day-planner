@@ -45,7 +45,6 @@ $(document).ready(() => {
     
 })
 function checkHour(){
-    // var currentHour = moment().format("h")
     var currentHour = moment().hour()
 $('.timeblock').each(function(){
     var timeCheck = $(this).attr("id").split('-')[0]
