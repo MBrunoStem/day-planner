@@ -26,4 +26,7 @@ The MIT License is a permissive free software license originating at the Massach
 ## Deployed Site
 [Link](https://mbrunostem.github.io/day-planner/)
 
+## Screenshots
 ![Deployed site landing page](./assets/images/landing-page.png)
+![Deployed site landing page](./assets/images/landing-page-2.png)
+![Deployed site landing page](./assets/images/landing-page-3.png)
