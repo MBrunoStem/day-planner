@@ -4,6 +4,7 @@
 Keep track of your busy schedule by saving all your appointments you day planner.
 
 ## User Story
+```
 - WHEN I launch the webpage
 - THEN I am presented with the current day/time and timeblockds for standard working hours
 - WHEN viewing the timeblocks
@@ -14,11 +15,12 @@ Keep track of your busy schedule by saving all your appointments you day planner
 - THEN the appointment is saved to local storage
 - WHEN I refresh the day planner
 - THEN the saved events persist
+```
 
 ## Technologies Used
-- HTML
-- CSS
-- Javascipt
+* HTML
+* CSS
+* Javascipt
 
 ## License
 The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology (MIT) in the late 1980s. As a permissive license, it puts only very limited restriction on reuse and has, therefore, high license compatibility.
